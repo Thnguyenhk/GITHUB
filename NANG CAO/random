@@ -8,8 +8,8 @@ print(loai)
 
 tuoi=int(input('Bạn bao nhiêu tuổi? '))
 ngay=input('Hôm nay là thứ mấy: ')
-if tuoi<12: Gia_ve='50.000 VND'
-elif 12<tuoi<60: Gia_ve='100.000 VND'
-else: Gia_ve='70.000 VND'
+if tuoi<12: Gia_ve=50000
+elif 12<=tuoi<60: Gia_ve=100000
+else: Gia_ve=70000
 if ngay=='thu tu': Gia_ve=Gia_ve*0.9
-print(Gia_ve)
+print(f'Giá vé của bạn là: {Gia_ve} VNĐ')
