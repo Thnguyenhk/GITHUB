@@ -1,0 +1,15 @@
+diem=9.5
+if diem>=9: loai='Xuat sac'
+elif 8<=diem<9: loai='Gioi'
+elif 6.5<=diem<8: loai='Kha'
+elif 5<=diem<6.5: loai='Trung binh'
+else: loai='yeu'
+print(loai)
+
+tuoi=int(input('Bạn bao nhiêu tuổi? '))
+ngay=input('Hôm nay là thứ mấy: ')
+if tuoi<12: Gia_ve='50.000 VND'
+elif 12<tuoi<60: Gia_ve='100.000 VND'
+else: Gia_ve='70.000 VND'
+if ngay=='thu tu': Gia_ve=Gia_ve*0.9
+print(Gia_ve)
