@@ -1,0 +1,5 @@
+x=int(input('Type one year: '))
+if x%400==0: print('It is a leaf year!')
+elif x%100==0: print('It is not a leaf year!')
+elif x%4==0: print('It is a leaf year!')
+else: print('It is not a leaf year!')
