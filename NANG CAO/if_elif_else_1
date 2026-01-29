@@ -1,11 +1,3 @@
-diem=9.5
-if diem>=9: loai='Xuat sac'
-elif 8<=diem<9: loai='Gioi'
-elif 6.5<=diem<8: loai='Kha'
-elif 5<=diem<6.5: loai='Trung binh'
-else: loai='yeu'
-print(loai)
-
 tuoi=int(input('Bạn bao nhiêu tuổi? '))
 ngay=input('Hôm nay là thứ mấy: ')
 if tuoi<12: Gia_ve=50000
