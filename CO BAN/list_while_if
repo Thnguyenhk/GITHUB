@@ -7,5 +7,7 @@ while True:
     if nuoc in menu:
         print (f'Mời bạn dùng {nuoc}!')
         break
+    elif 'có gì' in nuoc:
+        print (f"Chúng tôi có {', '.join(menu)}")
     else:
         print (f'Chúng tôi không có {nuoc}, bạn có thể dùng món khác không?')
