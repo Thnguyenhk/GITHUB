@@ -1,0 +1,18 @@
+import random
+so_bi_mat = random.randint(1, 10)
+so_lan_doan = 0
+
+print ('---CHÀO MỪNG ĐẾN VỚI TRÒ CHƠI ĐOÁN SỐ---')
+while so_lan_doan <3:
+    doan = int(input(f'Lượt {so_lan_doan + 1}, Hãy đoán một số từ 1 đến 10: '))
+    so_lan_doan += 1
+    
+    if doan == so_bi_mat:
+        print(f'Chúc mừng bạn đã đoán đúng sau {so_lan_doan} lần!')
+        break
+    elif doan > so_bi_mat:
+        print('Lớn quá, thử lại nhé!')
+    else:
+        print('Nhỏ quá, thử lại nhé!')
+if doan != so_bi_mat:
+    print(f'Thua rồi, lêu lêu! Số đúng là {so_bi_mat}!')
