@@ -1,0 +1,4 @@
+command = input('Nhập lệnh: ')
+responses = {'start': 'Bắt đầu', 'stop': 'Dừng lại!', 'pause': 'Tạm dừng.'}
+result = responses.get(command,'Lệnh không hợp lệ')
+print(result)
