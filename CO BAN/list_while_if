@@ -1,0 +1,11 @@
+menu = ['coca','sting','pepsi','fanta','7up','cafe','bia']
+
+print('CHÀO MỪNG BẠN ĐẾN VỚI MÁY BÁN NƯỚC TỰ ĐỘNG')
+
+while True:
+    nuoc = input('Bạn muốn uống gì: ').lower()
+    if nuoc in menu:
+        print (f'Mời bạn dùng {nuoc}!')
+        break
+    else:
+        print (f'Chúng tôi không có {nuoc}, bạn có thể dùng món khác không?')
