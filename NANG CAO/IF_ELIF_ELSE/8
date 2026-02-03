@@ -1,0 +1,19 @@
+print ('XÁC ĐỊNH VỊ TRÍ MỘT ĐIỂM TRÊN TRỤC TỌA ĐỘ OXY')
+x = float(input('Nhập trục x: '))
+y = float(input('Nhập trục y: '))
+match (x,y):
+    case (0,0):
+        print ('Điểm nằm ở gốc tọa độ 0')
+    case (x,0):
+        print ('Điểm nằm trên trục hoành OX')
+    case (0,y):
+        print ('Điểm nằm trên trục tung OY')
+    case (x,y) if x>0 and y>0:
+        print('Phần tư I')
+    case (x,y) if x<0 and y>0:
+        print('Phần tư II')
+    case (x,y) if x<0 and y<0:
+        print('Phần tư III')
+    case (x,y) if x>0 and y<0:
+        print('Phần tư IV')
+
