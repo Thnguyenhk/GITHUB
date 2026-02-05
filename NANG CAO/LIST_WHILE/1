@@ -1,0 +1,21 @@
+menu = {
+    'coca': 10000,
+    'sting': 10000,
+    'pepsi': 10000,
+    'fanta': 10000,
+    '7up': 10000,
+    'cafe': 20000,
+    'bia': 30000}
+
+print('CHÀO MỪNG BẠN ĐẾN VỚI MÁY BÁN NƯỚC TỰ ĐỘNG')
+
+while True:
+    nuoc = input('Bạn muốn uống gì: ').lower()
+    if nuoc in menu:
+        print (f'Mời bạn dùng {nuoc}! Giá của nó là {menu[nuoc]} VNĐ!')
+        x = int (input (f'Xin hãy nhập tiền: '))
+        break
+    elif 'có gì' in nuoc:
+        print (f"Chúng tôi có {', '.join(menu)}")
+    else:
+        print (f'Chúng tôi không có {nuoc}, bạn có thể dùng món khác không?')
