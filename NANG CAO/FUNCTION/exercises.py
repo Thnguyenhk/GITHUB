@@ -6,4 +6,4 @@ def calculate_total(price_list, tax_rate=0.08):
     final_total = subtotal * (1 + tax_rate)
     return (f"Your total is {final_total} euros.")
 
-print (calculate_total([50, 20, 30]))
+print (calculate_total([50, 10, 30]))
