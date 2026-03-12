@@ -12,9 +12,16 @@ print('CHÀO MỪNG BẠN ĐẾN VỚI MÁY BÁN NƯỚC TỰ ĐỘNG')
 while True:
     nuoc = input('Bạn muốn uống gì: ').lower()
     if nuoc in menu:
-        print (f'Mời bạn dùng {nuoc}! Giá của nó là {menu[nuoc]} VNĐ!')
-        x = int (input (f'Xin hãy nhập tiền: '))
-        break
+        gia = menu[nuoc]
+        print (f'Mời bạn dùng {nuoc}! Giá của nó là {gia} VNĐ!')
+        x = int (input(f'Xin hãy nhập tiền: '))
+            if x == gia:
+                print (f'Nước của bạn đây!')
+            break
+            elif x > gia:
+                print (f'Tiền thối của bạn là {x - gia} VNĐ.')
+            else:
+                print (f'Bạn chưa đủ tiền. Xin hãy bỏ thêm {gia - x}!')
     elif 'có gì' in nuoc:
         print (f"Chúng tôi có {', '.join(menu)}")
     else:

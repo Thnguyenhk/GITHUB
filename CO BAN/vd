@@ -1,0 +1,35 @@
+menu = {
+    'coca': 10,
+    'sting': 11,
+    'pepsi': 12,
+    'fanta': 13,
+    '7up': 14,
+    'cafe': 20,
+    'bia': 50}
+
+print ('WELCOME TO THE "WE HAVE NOTHING" VENDING MACHINE')
+while True:
+
+    drink = input (f'What do you want to drink: ').lower()
+    
+    if drink in menu:
+        price = menu[drink]
+        print (f'The price is {price} euros.')
+
+        paid = int (input (f'Please add your money: '))
+        while paid < price:
+            missing = price - paid
+            print (f'Insufficient funds. You need to add {missing} euros more.')
+            add = int (input (f'Your adding money: '))
+            paid = paid + add
+            
+
+        if paid == price:
+            print ('Thanks for purchased!')
+        elif paid > price:
+            print (f'Here is your change: {paid - price} euros.')
+                      
+    elif 'have' in drink:
+        print (f"We have {', '.join(menu)}")
+    else:
+        print (f"We don't have {drink}. Could you please choose another one!")

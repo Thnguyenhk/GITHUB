@@ -1,0 +1,2 @@
+books = {'THE CORRESPONDENT': {'author':'Virginia Evans'}, 'DEAR DEBBIE':{'author':['James Patterson', 'Brian Sitts']}, 'THEO OF GOLDEN': {'author': 'Allen Levi'}}
+print (f"The author of DEAR DEBBIE is {books['DEAR DEBBIE'] ['author']}.")
